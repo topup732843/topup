@@ -16,7 +16,7 @@ y = df.iloc[:, -1]
 print(X.head())
 Xtrain, Xtest, ytrain, ytest = train_test_split(X, y, test_size=0.10) 
 
-	classifier = KNeighborsClassifier(n_neighbors=5).fit(Xtrain, ytrain) 
+classifier = KNeighborsClassifier(n_neighbors=5).fit(Xtrain, ytrain) 
 
 ypred = classifier.predict(Xtest)
 
